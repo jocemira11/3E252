@@ -1,8 +1,22 @@
+#include <SerieNavidad.hpp>
+#include <Foco.hpp> 
 #include <iostream>
-    using namespace std;
+using namespace std;
 int main(int argc, char const *argv[])
 {
-    cout<<"Hola Mundo 2"<<endl;
+    SerieNavidad miSerieNavidad;
+    miSerieNavidad.Encender();
+    miSerieNavidad.ImprimirSerie();
+    miSerieNavidad.Apagar();
+    miSerieNavidad.ImprimirSerie();
+
+    Foco foco;
+    foco.Apagar();
+    foco.Encender();
+
+    cout<<"Foco:"
+    <<foco.MostrarEstado()
+    <<endl;
     return 0;
 }
 
